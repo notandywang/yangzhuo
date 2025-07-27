@@ -29,10 +29,10 @@ image.addEventListener("click", () => {
         image.src = transitions[selected][0]; // readframe.png
         state = "read";
         clickEnabled = true;
-      }, 1500); // let the gif play before transitioning
+      }, 12100); // let the gif play before transitioning
     } else {
       clickEnabled = false;
-      setTimeout(() => clickEnabled = true, 1000); // prevent skipping too early
+      setTimeout(() => clickEnabled = true, 9000); // prevent skipping too early
     }
 
   } else if (state === "gif") {
