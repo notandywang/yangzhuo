@@ -3,7 +3,7 @@ const image = document.getElementById("mainImage");
 let state = "firstframe";
 let clickEnabled = true;
 
-const gifs = ["gif1.gif", "gif2.gif", "gif3.gif", "gif_letter.gif"];
+const gifs = ["gif_letter.gif"];
 
 const transitions = {
   "gif1.gif": ["assets/gif1_read.png", "assets/gif1_text.png"],
