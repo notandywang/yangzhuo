@@ -2,7 +2,7 @@ const image = document.getElementById("mainImage");
 let state = "firstframe";
 let clickEnabled = true;
 
-const gifs = ["gif1.gif", "gif2.gif", "gif3.gif", "gif4.gif", "gif_letter.gif"];
+const gifs = ["gif_letter.gif"];
 const getRandomGif = () => gifs[Math.floor(Math.random() * gifs.length)];
 
 image.addEventListener("click", () => {
