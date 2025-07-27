@@ -17,7 +17,7 @@ image.addEventListener("click", () => {
     setTimeout(() => clickEnabled = true, 5000); // 1-second delay
   } else if (state === "gif") {
     if (image.dataset.current === "gif_letter.gif") {
-      image.src = "assets/image_letter.png";
+      image.src = "assets/readframe.png";
       state = "letter";
     } else {
       image.src = "assets/firstframe.png";
