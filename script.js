@@ -1,18 +1,16 @@
 const image = document.getElementById("mainImage");
 
 let state = "firstframe";
-let clickDisabled = false;
+let clickEnabled = true;
 
 image.addEventListener("click", () => {
-  if (clickDisabled) return;
+  if (!clickEnabled) return;
 
   if (state === "firstframe") {
     image.src = "assets/gifs/gif_letter.gif";
     state = "gif";
-    clickDisabled = true;
-    setTimeout(() => {
-      clickDisabled = false;
-    }, 8000); // Disable clicks for 8 seconds
+    clickEnabled = false;
+    setTimeout(() => clickEnabled = true, 8000); // Ignore clicks for 8 seconds
   } else if (state === "gif") {
     image.src = "assets/readtext.png";
     state = "text";
